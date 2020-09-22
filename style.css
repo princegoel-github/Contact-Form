@@ -1,5 +1,6 @@
-body{background-color: black;}
+<style>     
+    body{background-color: black;}
         h1{color: wheat;}
         h3{color: white;}
         p{color: white;}
-        
+</style>
