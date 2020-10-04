@@ -43,7 +43,25 @@ function myFunction(){
     var no=document.getElementById("no").value;
     var messsub=document.getElementById("messsub").value;
     var message=document.getElementById("message").value;
-    
 
-    alert ('your name is '+name+' ,your email id is '+email+' ,your phone number is '+no+' ,your thing that you ordered is '+messsub+' ,your preception about '+messsub+' is '+message+' thanks for your order have a nice day.');
+
+    if (name==""){
+      alert ('please enter your name');
+    }
+    else if (email==""){
+      alert ('please enter your e-mail');
+    }
+    else if (no==""){
+      alert ('please enter your mobile no.');
+    }
+    else if (messsub==""){
+      alert ('please enter the name of the thing you want to order');
+    }
+    else if (message==""){
+      alert ('please write the preception of '+messsub+' ');
+    }
+    else {
+
+
+  alert ("your name is "+name+" your email id is "+email+" ,your phone number is "+no+" ,your thing that you ordered is "+messsub+" ,your preception about "+messsub+" is "+message+" thanks for your order have a nice day.")};
 }
