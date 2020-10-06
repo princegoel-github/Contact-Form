@@ -51,6 +51,9 @@ function myFunction(){
     else if (email==""){
       alert ('please enter your e-mail');
     }
+    else if(!validate(email)){
+      alert("Please enter a valid email");
+    }
     else if (no==""){
       alert ('please enter your mobile no.');
     }
@@ -71,7 +74,8 @@ function validate(email) {
   //var address = document.getElementById[email].value;
   if (reg.test(email) == false) 
   {
-      alert('Invalid Email Address');
-      return (false);
+      return false;
   }
+  else
+  return true;
 }
