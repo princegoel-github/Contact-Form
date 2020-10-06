@@ -1,4 +1,4 @@
-function hello(){
+/*function hello(){
     var greeting;
     var time = new Date().getHours();
     if (time < 10) {
@@ -34,7 +34,7 @@ function hello(){
         day = "Saturday";
     }
     document.getElementById("in").innerHTML = "Today is " + day;
-}
+}*/
 
 
 function myFunction(){
@@ -64,4 +64,14 @@ function myFunction(){
 
 
   alert ("your name is "+name+" your email id is "+email+" ,your phone number is "+no+" ,your thing that you ordered is "+messsub+" ,your preception about "+messsub+" is "+message+" thanks for your order have a nice day.")};
+}
+function validate(email) {
+
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  //var address = document.getElementById[email].value;
+  if (reg.test(email) == false) 
+  {
+      alert('Invalid Email Address');
+      return (false);
+  }
 }
