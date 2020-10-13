@@ -57,6 +57,9 @@ function myFunction(){
     else if (no==""){
       alert ('please enter your mobile no.');
     }
+    else if(!validateNo(no)){
+      alert ('please enter a valid no.');
+    }
     else if (messsub==""){
       alert ('please enter the name of the thing you want to order');
     }
@@ -70,7 +73,7 @@ function myFunction(){
 }
 function validate(email) {
 
-  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var reg  = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
   //var address = document.getElementById[email].value;
   if (reg.test(email) == false) 
   {
@@ -78,4 +81,16 @@ function validate(email) {
   }
   else
   return true;
+}
+function validateNo(no){
+  
+  if (no.length < 10 || no.length > 10) {
+    alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+    return false;
+  }
+else  {
+
+  alert("Success ");
+  return true;
+}
 }
